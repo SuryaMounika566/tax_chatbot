@@ -21,7 +21,7 @@
     <script>
         function sendMessage() {
             let userInput = document.getElementById("user-input").value.trim();
-            if (!userInput) return;  // ✅ Fix: Prevent empty messages
+            if (!userInput) return;  
 
             let chatBox = document.getElementById("chat-box");
             chatBox.innerHTML += `<p class="user-message">You: ${userInput}</p>`;
@@ -29,11 +29,11 @@
             fetch("/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ message: userInput })  // ✅ Fix: Send JSON properly
+                body: JSON.stringify({ message: userInput })  
             })
             .then(response => response.json())
             .then(data => {
-                if (data.response) {  // ✅ Fix: Ensure response exists
+                if (data.response) {  
                     chatBox.innerHTML += `<p class="bot-message">Tax Assistant: ${data.response}</p>`;
                 } else {
                     chatBox.innerHTML += `<p class="bot-message">Tax Assistant: Sorry, I didn't understand that.</p>`;

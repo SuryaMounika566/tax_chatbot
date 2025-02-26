@@ -17,10 +17,9 @@ def generate_response(user_input):
     # Generate response
     response = model.generate_content(f"System: {system_instruction}\nUser: {user_input}\nTax Assistant:")
 
-    # ✅ Fix: Extract the text properly
     bot_response = response.text if hasattr(response, "text") else "I'm sorry, I couldn't generate a response."
 
-    return bot_response  # Return the response text
+    return bot_response  # Returning the response text
 
 @app.route("/")
 def home():
@@ -28,7 +27,7 @@ def home():
 
 @app.route("/chat", methods=["POST"])
 def chat():
-    user_input = request.json.get("message", "")  # ✅ Fix: Use `.get()` to avoid errors
+    user_input = request.json.get("message", "") 
     if not user_input.strip():  # If the input is empty
         return jsonify({"response": "Please enter a valid message."})
 
