@@ -1,9 +1,9 @@
-# 🏦 Tax Assistant Chatbot
+# Tax Assistant Chatbot
 
-## 📌 Problem Statement
+## Problem Statement
 A **Tax Assistant** that can automate tax filing processes, simplify complex calculations, identify deductions, and minimize errors.
 
-## 🚀 Features
+## Features
 - Automates tax filing processes
 - Provides tax calculations based on income
 - Identifies possible tax deductions
@@ -11,20 +11,20 @@ A **Tax Assistant** that can automate tax filing processes, simplify complex cal
 - Declines non-tax-related queries
 - Built using **Flask**, **Python**, and **Google AI Studio**
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend:** Python, Flask
 - **AI Model:** Google Gemini API
 - **Frontend:** HTML (Flask Templates)
 
-## 💂️ Folder Structure
+## Folder Structure
 ```
-💾 tax_chatbot
- ├── 📁 templates  # Contains index.html
+tax_chatbot
+ ├── templates  # Contains index.html
  ├── app.py       # Main Flask backend
  ├── README.md    # Project documentation
 ```
 
-## 🔧 Installation & Setup
+## Installation & Setup
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/SuryaMounika566/tax_chatbot.git
@@ -58,7 +58,7 @@ A **Tax Assistant** that can automate tax filing processes, simplify complex cal
 6. **Open in Browser**
    - Go to: `http://127.0.0.1:5000/`
 
-## 📌 Usage
+## Usage
 - Enter tax-related queries in the chatbot.
 - Get automated responses regarding tax slabs, deductions, and calculations.
 - Ask about income tax, exemptions, and filing processes.
